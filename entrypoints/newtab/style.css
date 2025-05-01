@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body,
+  html {
+    @apply text-base text-neutral-700 dark:text-neutral-300;
+  }
+
+  .query-box-scrollbar::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  .query-box-scrollbar::-webkit-scrollbar-track {
+    @apply rounded bg-neutral-200/60;
+  }
+
+  .dark .query-box-scrollbar::-webkit-scrollbar-track {
+    @apply bg-neutral-700/30;
+  }
+
+  .query-box-scrollbar::-webkit-scrollbar-thumb {
+    @apply cursor-pointer rounded bg-neutral-300/75;
+  }
+
+  .dark .query-box-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-neutral-700/80;
+  }
+
+  .query-box-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-300;
+  }
+
+  .dark .query-box-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-700;
+  }
+
+  .suggestion-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .suggestion-scrollbar::-webkit-scrollbar-track {
+    @apply rounded-br bg-transparent;
+  }
+
+  .suggestion-scrollbar::-webkit-scrollbar-thumb {
+    @apply cursor-pointer rounded-br bg-neutral-200;
+  }
+
+  .dark .suggestion-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-neutral-700/75;
+  }
+
+  .suggestion-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-300;
+  }
+
+  .dark .suggestion-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-700;
+  }
+
+  [data-effect='duration'] [class*='bg'] {
+    @apply duration-200;
+  }
+}
+
+@layer utilities {
+  .scroll-hidden::-webkit-scrollbar {
+    @apply hidden;
+  }
+}

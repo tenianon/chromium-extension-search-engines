@@ -1,0 +1,6 @@
+export { IconoirSunLight } from './IconoirSunLight'
+export { IconoirMoonSat } from './IconoirMoonSat'
+export { IconoirAppleImac2021 } from './IconoirAppleImac2021'
+export { PhMagnifyingGlassLight } from './PhMagnifyingGlassLight'
+export { PhMagnifyingGlass } from './PhMagnifyingGlass'
+export { PhX } from './PhX'
