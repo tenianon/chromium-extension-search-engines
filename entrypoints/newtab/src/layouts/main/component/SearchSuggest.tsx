@@ -64,7 +64,7 @@ const SearchSuggest: React.FC<SearchSuggestProps> = memo(
 
     console.log('--- SearchSuggestion ---')
     return (
-      <div className='suggestion-scrollbar max-h-96 overflow-x-hidden rounded-b-md bg-neutral-50 dark:bg-neutral-800'>
+      <div className='suggestion-scrollbar max-h-96 max-w-[440px] overflow-x-hidden rounded-b-md bg-neutral-50 dark:bg-neutral-800'>
         {value &&
           value.map((item, index) => (
             <div
